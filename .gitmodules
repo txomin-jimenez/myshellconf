@@ -1,0 +1,39 @@
+[submodule "vim/bundle/nerdtree_"]
+	path = vim/bundle/nerdtree_
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/ZoomWin_"]
+	path = vim/bundle/ZoomWin_
+	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "vim/bundle/ctrlp.vim_"]
+	path = vim/bundle/ctrlp.vim_
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/nerdcommenter_"]
+	path = vim/bundle/nerdcommenter_
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/bundle/tmuxline.vim_"]
+	path = vim/bundle/tmuxline.vim_
+	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "vim/bundle/vim-airline_"]
+	path = vim/bundle/vim-airline_
+	url = https://github.com/bling/vim-airline.git
+[submodule "vim/bundle/vim-bufferline_"]
+	path = vim/bundle/vim-bufferline_
+	url = https://github.com/bling/vim-bufferline.git
+[submodule "vim/bundle/vim-coffee-script_"]
+	path = vim/bundle/vim-coffee-script_
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/vim-fugitive_"]
+	path = vim/bundle/vim-fugitive_
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-jade_"]
+	path = vim/bundle/vim-jade_
+	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "vim/bundle/vim-javascript_"]
+	path = vim/bundle/vim-javascript_
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/vim-json_"]
+	path = vim/bundle/vim-json_
+	url = https://github.com/elzr/vim-json.git
+[submodule "vim/bundle/vim-tomorrow-theme_"]
+	path = vim/bundle/vim-tomorrow-theme_
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
