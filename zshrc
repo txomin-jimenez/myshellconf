@@ -69,7 +69,6 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git git-flow osx brew bower zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.themes/powerlevel9k/powerlevel9k.zsh-theme
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 
