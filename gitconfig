@@ -1,6 +1,6 @@
 [user]
-	name = Txomin
-	email = tjd@spyro.es
+	name = tjd
+	email = txomin.jimenez.dev@gmail.com
 [core]
 	excludesfile = /Users/tjd/.gitignore_global
 [difftool "sourcetree"]
