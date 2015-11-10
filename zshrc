@@ -1,14 +1,32 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+export LC_CTYPE=es_ES.UTF-8
+export LANG=es_ES.UTF-8
+
+export EDITOR='vim'
+export TERM=xterm-256color
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pure"
+#ZSH_THEME="pure"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 autoload -U promptinit && promptinit
-prompt pure
+
+export DEFAULT_USER=tjd
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs node_version status)
+POWERLEVEL9K_SHOW_CHANGESET=true
+POWERLEVEL9K_NODE_VERSION_BACKGROUND='022'
+POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
+POWERLEVEL9K_APPLE_ICON=''
+#prompt pure
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -23,7 +41,7 @@ prompt pure
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -51,6 +69,7 @@ prompt pure
 plugins=(git git-flow osx brew bower zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.themes/powerlevel9k/powerlevel9k.zsh-theme
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 
@@ -81,11 +100,6 @@ fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-export LC_CTYPE=es_ES.UTF-8
-export LANG=es_ES.UTF-8
-
-#export TERM=xterm-256color
-export EDITOR='vim'
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
