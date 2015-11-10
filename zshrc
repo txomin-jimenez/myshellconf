@@ -52,6 +52,8 @@ plugins=(git git-flow osx brew bower zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
+
 # configuracion de zshell a medida de cada maquina sacada a otro fichero
 source ~/.zshrc00
 
@@ -61,6 +63,8 @@ if [ "$(uname)" = "Darwin" ]; then
   # Z (navegador de carpetas OSX ver.)
   . `brew --prefix`/etc/profile.d/z.sh
 
+  export PATH=$HOME/.nodebrew/current/bin:$PATH
+  
 elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
   # Do something under GNU/Linux platform
   
@@ -73,30 +77,15 @@ fi
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:~/instantclient_11_2"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 export LC_CTYPE=es_ES.UTF-8
 export LANG=es_ES.UTF-8
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-twilight.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 #export TERM=xterm-256color
-
-
 export EDITOR='vim'
-
-#export SPYROTOUCH_BASE_SERVER_DEV=http://192.168.1.177:4444/api/base
-
-export OCI_HOME=~/instantclient_11_2
-export TNS_ADMIN=$OCI_HOME
-export OCI_LIB_DIR=$OCI_HOME
-export DYLD_LIBRARY_PATH=$OCI_LIB_DIR
-
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
