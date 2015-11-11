@@ -46,3 +46,6 @@
 [submodule "vim/bundle/vim-stylus"]
 	path = vim/bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus.git
+[submodule "shell-apps/z"]
+	path = shell-apps/z
+	url = https://github.com/rupa/z.git
