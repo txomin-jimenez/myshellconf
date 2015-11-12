@@ -1,6 +1,6 @@
 execute pathogen#infect()
 
-let mapleader = ','
+let mapleader = '´'
 filetype plugin indent on
 syntax on
 
@@ -9,6 +9,10 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-h> <c-w>h
 map <c-l> <c-w>l
+
+" move through buffers
+map <leader>k :bn<cr>
+map <leader>j :bp<cr>
 
 " NERDTree maps and opts
 map <C-n> :NERDTreeToggle %<CR>
@@ -38,6 +42,7 @@ set number
 set foldmethod=indent
 set foldlevel=99
 set laststatus=2
+set autowrite
 
 let g:CoffeeAutoTagDisabled=0
 
@@ -58,6 +63,8 @@ let g:airline#extensions#tmuxline#enabled = 1
 " to only show the tail, e.g. a branch 'feature/foo' show 'foo'
 let g:airline#extensions#branch#format = 1   
 let g:bufferline_echo = 0
+" get rid of the default mode indicator
+set noshowmode 
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
 
