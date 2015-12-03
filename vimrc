@@ -13,6 +13,8 @@ map <c-l> <c-w>l
 " move through buffers
 map <leader>k :bn<cr>
 map <leader>j :bp<cr>
+map <leader>yy "*y
+map <leader>pp "*p
 
 " NERDTree maps and opts
 map <C-n> :NERDTreeToggle %<CR>
@@ -43,6 +45,7 @@ set foldmethod=indent
 set foldlevel=99
 set laststatus=2
 set autowrite
+set ttimeoutlen=50
 
 let g:CoffeeAutoTagDisabled=0
 
@@ -67,6 +70,13 @@ let g:bufferline_echo = 0
 set noshowmode 
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" map para Ctrl-P Funky (lista de funciones)
+let g:ctrlp_funky_matchtype = 'path'
+let g:ctrlp_funky_syntax_highlight = 1
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 " show GIT status in status bar 
 set statusline=%{fugitive#statusline()}
