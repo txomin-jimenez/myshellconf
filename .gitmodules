@@ -49,3 +49,6 @@
 [submodule "shell-apps/z"]
 	path = shell-apps/z
 	url = https://github.com/rupa/z.git
+[submodule "vim/bundle/vim-jsbeautify"]
+	path = vim/bundle/vim-jsbeautify
+	url = https://github.com/maksimr/vim-jsbeautify.git
