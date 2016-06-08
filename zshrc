@@ -75,23 +75,23 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 # configuracion de zshell a medida de cada maquina sacada a otro fichero
 source ~/.zshrc00
 
-if [ "$(uname)" = "Darwin" ]; then
+#if [ "$(uname)" = "Darwin" ]; then
   # Do something under Mac OS X platform        
 
   # Z (navegador de carpetas OSX ver.)
-  . `brew --prefix`/etc/profile.d/z.sh
+#  . `brew --prefix`/etc/profile.d/z.sh
 
-  export PATH=$HOME/.nodebrew/current/bin:$PATH
+#  export PATH=$HOME/.nodebrew/current/bin:$PATH
   
-elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
+#elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
   # Do something under GNU/Linux platform
   
   # Z (navegador de carpetas Linux ver.)
-  . ~/shell-apps/z/z.sh
+#  . ~/shell-apps/z/z.sh
 
-elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
+#elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
   # Do something under Windows NT platform
-fi
+#fi
 
 # User configuration
 
