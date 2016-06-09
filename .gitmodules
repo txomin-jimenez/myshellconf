@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-jsbeautify"]
 	path = vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule "vim/bundle/vim-matrix-screensaver"]
+	path = vim/bundle/vim-matrix-screensaver
+	url = https://github.com/uguu-org/vim-matrix-screensaver.git

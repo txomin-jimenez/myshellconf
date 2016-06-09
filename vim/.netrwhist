@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/tjd/dev/spyrotouch-blogicengine'
 let g:netrw_dirhist_2='/Users/tjd'
 let g:netrw_dirhist_3='/Users/tjd/dev/spyrotouch-blogicengine'
 let g:netrw_dirhist_4='/Users/tjd'
 let g:netrw_dirhist_5='/Users/tjd/dev/spyrotouch-blogicengine'
 let g:netrw_dirhist_6='/Users/tjd/dev/tmux-cheatsheet'
+let g:netrw_dirhist_7='/Users/tjd/dev/spyrotouch-storageengine/src/spyrotouch-storageengine'
