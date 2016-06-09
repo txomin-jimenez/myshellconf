@@ -52,6 +52,6 @@
 [submodule "vim/bundle/vim-jsbeautify"]
 	path = vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
-[submodule "vim/bundle/ctrl-funky_"]
-	path = vim/bundle/ctrl-funky_
+[submodule "vim/bundle/ctrlp-funky_"]
+	path = vim/bundle/ctrlp-funky_
 	url = git://github.com/tacahiroy/ctrlp-funky.git
