@@ -7,6 +7,9 @@ export LANG=es_ES.UTF-8
 export EDITOR='vim'
 export TERM=xterm-256color
 
+# prevent ctrl-d close shell
+set -o ignoreeof
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -70,7 +73,7 @@ plugins=(git git-flow osx brew bower zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/Users/tjd/Library/Android/sdk/platform-tools"
 
 # configuracion de zshell a medida de cada maquina sacada a otro fichero
 source ~/.zshrc00
@@ -126,5 +129,7 @@ alias count_files_here='find ./ -follow  -maxdepth 1 -type f | wc -l'
 alias zz='source ~/.zshrc'
 alias nolimit='ulimit -S -n 4096'
 alias git_branches_clean='git fetch origin --prune'
-
+alias saysomething='fortune | cowsay -f bud-frogs | lolcat'
+alias clock='tty-clock -s -c -D'
+alias foldertree='tree -C --du -h . | less -R'
 
